@@ -145,17 +145,35 @@ allGenres.map(g=>g in genreCount?genreCount[g]+=1:genreCount[g]=1)
 
 // console.log(genreCount);
 
+var genreCountArray=Object.entries(genreCount)
+
+genreCountArray.sort((g1,g2)=>g2[1]-g1[1])
+
+console.log(genreCountArray);
+
+
+
+
 // in which year most number of movies released
 
 var allYears = movies.map((m)=>m.year)
 
-console.log(allYears);
+// console.log(allYears);
 
 var yearCount = {}
 
 allYears.map(y=>y in yearCount?yearCount[y]+=1:yearCount[y]=1)
 
-console.log(yearCount);
+// console.log(yearCount);
+
+var yearCountArray = Object.entries(yearCount)
+
+yearCountArray.sort((y1,y2)=>y2[1]-y1[1])
+
+console.log(yearCountArray);
+
+
+
 
 
 
