@@ -1,0 +1,7 @@
+###
+
+GET https://fakestoreapi.com/products
+
+###
+
+GET https://jsonplaceholder.typicode.com/users
